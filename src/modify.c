@@ -37,7 +37,8 @@ static void vCliDC_Modify_DeletePlayer()
 
     while (1)
     {
-        printf("Enter name of Player to delete (not case-sensitive): ");
+        printf("\n** Delete Player **\n");
+        printf("\nEnter name of Player to delete (not case-sensitive): ");
         int input = giCliDC_Global_GetInput(Name);
         if (input == 1)
         {
@@ -104,13 +105,17 @@ static void vCliDC_Modify_ModifyChoices()
 {
     char choice[5];
     int loop = 1;
-    printf("\n** Modify Player **\n\n");
+    printf("\n** Modify Player **\n");
 
     while (loop == 1)
     {
         int check = 1;
-        printf("Modify Player Options:\n");
-        printf("n: change player name\na: change player AC\nh: change player HP\nx: return home\nPlease choose from the above: ");
+        printf("\nModify Player Options:\n");
+        printf( "n: Change player name\n"
+                "a: Change player AC\n"
+                "h: Change player HP\n"
+                "x: Return to modify database menu\n"
+                "Please choose from the above: " );
         while (check == 1)
         {
             fgets(choice, sizeof(choice), stdin);
@@ -411,13 +416,18 @@ void gvCliDC_Modify_MainLoop()
 {
     char choice[5];
     int loop = 1;
-    printf("\n*** Modify Player Database ***\n\n");
+    
 
     while (loop == 1)
     {
+        printf("\n*** Modify Player Database ***\n");
         int check = 1;
-        printf("Modify Player Database Options:\n");
-        printf("a: add a player\nr: remove a player\nm: modify a player\nx: return home\nPlease choose from the above: ");
+        printf("\nModify Player Database Options:\n");
+        printf( "a: Add a player\n"
+                "r: Remove a player\n"
+                "m: Modify a player\n"
+                "x: Return to home menu\n"
+                "Please choose from the above: " );
         while (check == 1)
         {
             fgets(choice, sizeof(choice), stdin);

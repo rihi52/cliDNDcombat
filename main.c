@@ -11,9 +11,14 @@ int main (void)
 
     while (loop == 1)
     {
+        printf("\n*** Home Menu ***\n");
         int check = 1;
         printf("\nHome Options:\n");
-        printf("l: lookup a monster(s)\nc: enter combat\nm: modify player database\nx: exit program\nPlease choose from the above: ");
+        printf( "l: Lookup a monster(s)\n"
+                "c: Enter combat\n"
+                "m: Modify player database\n"
+                "x: Exit program\n"
+                "Please choose from the above: ");
         while (check == 1)
         {
             fgets(choice, sizeof(choice), stdin);

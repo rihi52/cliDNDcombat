@@ -354,6 +354,7 @@ void gvCliDC_Lookup_Main()
     int loop = 1;
     while (1 == loop)
     {
+        printf("\n*** Lookup Menu ***\n");
         char choice[SMALL_BUFFER_BYTE];
         memset(choice, '\0', sizeof(choice));
         int check = 1;

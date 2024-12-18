@@ -7,7 +7,7 @@ A command line tool used to run combat scenarios, designed for 5th edition.
 ### Combat Tracker
 
 - Initiative Tracker
-- Add and save custom players - _Cannot edit saved players yet_
+- Add and save custom players
   - Holds name, AC, and HP for players
 - Add up to 50 monsters of the same type - _Not currently enforced_
 - Add as many different types of monsters as needed, pulled from an included sqlite3 db containing basic info on all monsters in the 5E SRD
@@ -26,19 +26,27 @@ A command line tool used to run combat scenarios, designed for 5th edition.
 
 ## Screenshots
 
+### Home Menu
+
+![image](https://github.com/rihi52/clidnbatter/blob/main/assets/homemenu.png)
+
 ### Combat Tracking
 
-![image](https://github.com/rihi52/clidnbatter/blob/main/assets/startcombat.png)
+![image](https://github.com/rihi52/clidnbatter/blob/main/assets/playerinfo.png)
 
-![image](https://github.com/rihi52/clidnbatter/blob/main/assets/monstercombat.png)
+![image](https://github.com/rihi52/clidnbatter/blob/main/assets/enemyinfo.png)
 
-![image](https://github.com/rihi52/clidnbatter/blob/main/assets/combatorder.png)
+![image](https://github.com/rihi52/clidnbatter/blob/main/assets/combatmenu.png)
 
-![image](https://github.com/rihi52/clidnbatter/blob/main/assets/afterturn.png)
+### Look Up Menu
 
-### Looking Up
+![image](https://github.com/rihi52/clidnbatter/blob/main/assets/lookupmenu.png)
 
-![image](https://github.com/rihi52/clidnbatter/blob/main/assets/lookup.png)
+![image](https://github.com/rihi52/clidnbatter/blob/main/assets/crlookup.png)
+
+### Modify Player Database
+
+![image](https://github.com/rihi52/clidnbatter/blob/main/assets/modifymenu.png)
 
 </br>
 </br>

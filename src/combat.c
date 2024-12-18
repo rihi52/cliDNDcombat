@@ -347,16 +347,17 @@ static void vCliDC_Combat_MainLoop()
     bool combat = true;
 
     while (combat == true)
-    {
-        printf("printcounter start main loop: %d\n", PrintCounter);
-        
+    {        
         vCliDC_Combat_PrintCurrentTurn();
         int check = 1;
         damInit = 0;
         damaged = 0;
         damAmount = 0;
         bool confirmed = false;
-        printf("Combat Options:\n'd' for damage\n'n' for next turn\n'x' for end combat\n"); 
+        printf( "Combat Options:\n"
+                "d: Deal damage\n"
+                "n: Proceed to next turn\n"
+                "x: End combat\n" ); 
         printf("What happens: ");
         while (check == 1)
         {
@@ -442,6 +443,7 @@ static void vCliDC_Combat_MainLoop()
                 
                 vCliDC_Combat_PrintInitiativeOrder();
                 break;
+
             case 'x':
                 printf("\n********** Combat Over **********\n\n");
                 combat = false;
@@ -455,7 +457,10 @@ static void vCliDC_Combat_MainLoop()
                 break;
 
             default:
-                printf("Invalid Choice:\n'd' for damage\n'n' for next turn\n'x' for end combat\n");
+                printf( "Invalid Choice:\n"
+                        "d: Deal damage\n"
+                        "n: Proceed to next turn\n"
+                        "x: End combat\n" );
                 break;
         } 
     }
@@ -490,7 +495,6 @@ void gvCliDC_Combat_LookupMonster()
     {
         userCR = strtol(buffer, &endptr, 10);
     }
-    //scanf("%d", &userCR);
 
     const char *sql = "SELECT id, name, type, cr, hp FROM monsters WHERE cr = ?";
 
